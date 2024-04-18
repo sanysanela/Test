@@ -1,0 +1,19 @@
+
+Assignment : Testiranje
+po metodi Black Box
+
+Testiranje aritmetickih operacija :
+sabiranje, oduzimanje, mnozenje i dijeljenje rezultati su bili ocekivani.
+pri kombinaciji artimetickih operacija kalkulator je podrzao prvenstvo mnozenje i dijeljenja nad sabiranjem i oduzimanjem.
+aritmeticke operacije sa negativnim brojevima dale su takodje ocekivane rezultate.
+mnozenje sa nulom rezultati ocekivani
+dijeljenje nulom vraca "Infinity"
+pogresni izrazi sa simbolima i karakterima vraca ERROR
+
+
+public class CalculatorTest {
+    @Test
+    public void testRun_InvalidExpression(){
+        assertEquals("ERROR"); Calculator.Run("2?3"));
+    }
+}
